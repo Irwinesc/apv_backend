@@ -5,7 +5,7 @@ const agregarPaciente = async (req, res) => {
     paciente.veterinario = req.veterinario._id;
     try {
         const pacienteGuardado = await paciente.save();
-        return res.json({ pacienteGuardado })
+        return res.json( pacienteGuardado )
     } catch (error) {
         console.log(error)
     }
